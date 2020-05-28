@@ -2,14 +2,14 @@
   "name": "nested-graph-generator",
   "version": "0.1.1-beta.1",
   "description": "A random graph generator for generating compound graphs with nodes, node group(container node) and links.",
-  "main": "lib/index.js",
-  "types": "lib/index.d.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "test": "jest",
     "coverage": "yarn test --collect-coverage",
     "lint": "eslint 'src/**/*.{js,ts}'",
     "format": "yarn lint --fix",
-    "build": "tsc"
+    "build": "yarn lint && tsc"
   },
   "repository": {
     "type": "git",
