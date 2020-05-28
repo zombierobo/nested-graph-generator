@@ -5,7 +5,8 @@
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
+    "coverage": "yarn test --collect-coverage",
     "lint": "eslint 'src/**/*.{js,ts}'",
     "format": "yarn lint --fix",
     "build": "tsc"
@@ -26,12 +27,15 @@
   },
   "homepage": "https://github.com/zombierobo/nested-graph-generator#readme",
   "devDependencies": {
+    "@types/jest": "^25.2.3",
     "@typescript-eslint/eslint-plugin": "^3.0.2",
     "@typescript-eslint/parser": "^3.0.2",
     "eslint": "^7.1.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-prettier": "^3.1.3",
+    "jest": "^26.0.1",
     "prettier": "^2.0.5",
+    "ts-jest": "^26.0.0",
     "typescript": "^3.9.3"
   }
 }
