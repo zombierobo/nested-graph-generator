@@ -1,0 +1,29 @@
+{
+  "name": "nested-graph-generator",
+  "version": "1.0.0",
+  "description": "A random graph generator for generating compound graphs with nodes, node group(container node) and links.",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zombierobo/nested-graph-generator.git"
+  },
+  "keywords": [
+    "javascript",
+    "connectivity",
+    "graph algorithms"
+  ],
+  "author": "Hasmukh Suthar <hasmukhsuthar98@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zombierobo/nested-graph-generator/issues"
+  },
+  "homepage": "https://github.com/zombierobo/nested-graph-generator#readme",
+  "devDependencies": {
+    "typescript": "^3.9.3"
+  }
+}
