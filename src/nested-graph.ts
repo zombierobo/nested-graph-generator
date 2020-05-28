@@ -1,22 +1,22 @@
 import { GraphNode, GraphLink } from './types';
 
 export class NestedGraph {
-  private nodesMap: Map<string, GraphNode>;
+  private nodesMap: { [key: string]: GraphNode };
   private links: GraphLink[];
 
   constructor(nodes: GraphNode[] = [], links: GraphLink[] = []) {
-    this.nodesMap = new Map();
+    this.nodesMap = {};
     this.setNodes(nodes);
     this.links = links;
   }
 
   public setNodes(nodes: GraphNode[]) {
-    this.nodesMap = new Map();
-    nodes.forEach((n) => this.nodesMap.set(n.id, n));
+    this.nodesMap = {};
+    nodes.forEach((n) => (this.nodesMap[n.id] = n));
   }
 
   public updateNode(nodeId: string, node: GraphNode) {
-    this.nodesMap.set(nodeId, node);
+    this.nodesMap[nodeId] = node;
   }
 
   public setLinks(links: GraphLink[]) {
@@ -24,11 +24,11 @@ export class NestedGraph {
   }
 
   public findNode(nodeId: string): GraphNode | undefined {
-    return this.nodesMap.get(nodeId);
+    return this.nodesMap[nodeId];
   }
 
   public getAllNodes(): GraphNode[] {
-    return Array.from(this.nodesMap.values());
+    return Object.keys(this.nodesMap).map((k) => this.nodesMap[k]);
   }
 
   public getAllLinks(): GraphLink[] {
@@ -68,10 +68,13 @@ export class NestedGraph {
   public getAllNodesFromOtherSubTrees(nodeId: string): GraphNode[] {
     const rootNode = this.findRootNode(nodeId);
     if (rootNode) {
-      const nodeIdsSetFromSubTree = new Set(
-        this.getAllNodesInSubGraph(rootNode.id).map((n) => n.id)
-      );
-      return this.getAllNodes().filter((n) => !nodeIdsSetFromSubTree.has(n.id));
+      const nodeIdsSetFromSubTree = this.getAllNodesInSubGraph(rootNode.id)
+        .map((n) => n.id)
+        .reduce((acc, cur) => {
+          acc[cur] = true;
+          return acc;
+        }, {} as { [key: string]: boolean });
+      return this.getAllNodes().filter((n) => !nodeIdsSetFromSubTree[n.id]);
     } else {
       return [];
     }

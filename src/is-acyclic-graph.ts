@@ -7,21 +7,23 @@ export function isAcyclicGraph(
       acc[sourceId].push(targetId);
       return acc;
     }, {} as { [key: string]: string[] });
-    const allNodes = Array.from(
-      new Set(
-        links
-          .map((l) => [l.sourceId, l.targetId])
-          .reduce((acc, cur) => acc.concat(cur), [])
-      )
+    const allNodes = Object.keys(
+      links
+        .map((l) => [l.sourceId, l.targetId])
+        .reduce((acc, cur) => {
+          cur.forEach((c) => (acc[c] = true));
+          return acc;
+        }, {} as { [key: string]: boolean })
     );
-    const nodesWithoutOutgoingLink = new Set(
-      allNodes.filter(
+    const nodesWithoutOutgoingLink = allNodes
+      .filter(
         (n) => !(sourceToTargetsMap[n] && sourceToTargetsMap[n].length > 0)
       )
-    );
-    const newLinks = links.filter(
-      (l) => !nodesWithoutOutgoingLink.has(l.targetId)
-    );
+      .reduce((acc, cur) => {
+        acc[cur] = true;
+        return acc;
+      }, {} as { [key: string]: boolean });
+    const newLinks = links.filter((l) => !nodesWithoutOutgoingLink[l.targetId]);
     if (newLinks.length === links.length) {
       return false;
     }

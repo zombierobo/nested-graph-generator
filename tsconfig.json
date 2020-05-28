@@ -5,9 +5,7 @@
         "declaration": true,
         "outDir": "./lib",
         "strict": true,
-        "lib": [
-            "ES2015"
-        ]
+        "lib": []
     },
     "include": [
         "src"
