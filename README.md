@@ -1,5 +1,6 @@
 # nested-graph-generator
 A random graph generator for generating compound graphs with nodes, node group(container node) and links.
+Visit [demo site](https://zombierobo.github.io/nested-graph-generator) to visualize the graphs generated using this library.
 
 ## Why
 Imagine you are writing an application or a library which handles rendering of graphs. You will need a good dataset of graphs to test your application for various types and sizes of graphs.
