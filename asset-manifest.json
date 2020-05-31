@@ -1,23 +1,24 @@
 {
   "files": {
-    "main.css": "/nested-graph-generator/static/css/main.41d4da2d.chunk.css",
-    "main.js": "/nested-graph-generator/static/js/main.2124ec96.chunk.js",
-    "main.js.map": "/nested-graph-generator/static/js/main.2124ec96.chunk.js.map",
+    "main.css": "/nested-graph-generator/static/css/main.21979357.chunk.css",
+    "main.js": "/nested-graph-generator/static/js/main.3ae1488e.chunk.js",
+    "main.js.map": "/nested-graph-generator/static/js/main.3ae1488e.chunk.js.map",
     "runtime-main.js": "/nested-graph-generator/static/js/runtime-main.835347f2.js",
     "runtime-main.js.map": "/nested-graph-generator/static/js/runtime-main.835347f2.js.map",
-    "static/js/2.21ccd1d6.chunk.js": "/nested-graph-generator/static/js/2.21ccd1d6.chunk.js",
-    "static/js/2.21ccd1d6.chunk.js.map": "/nested-graph-generator/static/js/2.21ccd1d6.chunk.js.map",
+    "static/js/2.a336dab7.chunk.js": "/nested-graph-generator/static/js/2.a336dab7.chunk.js",
+    "static/js/2.a336dab7.chunk.js.map": "/nested-graph-generator/static/js/2.a336dab7.chunk.js.map",
     "index.html": "/nested-graph-generator/index.html",
-    "precache-manifest.a0f94cad5a0db95adc646524c3d9e88a.js": "/nested-graph-generator/precache-manifest.a0f94cad5a0db95adc646524c3d9e88a.js",
+    "precache-manifest.21734982ab320e615bffc79d227269ca.js": "/nested-graph-generator/precache-manifest.21734982ab320e615bffc79d227269ca.js",
     "service-worker.js": "/nested-graph-generator/service-worker.js",
-    "static/css/main.41d4da2d.chunk.css.map": "/nested-graph-generator/static/css/main.41d4da2d.chunk.css.map",
-    "static/js/2.21ccd1d6.chunk.js.LICENSE.txt": "/nested-graph-generator/static/js/2.21ccd1d6.chunk.js.LICENSE.txt",
+    "static/css/main.21979357.chunk.css.map": "/nested-graph-generator/static/css/main.21979357.chunk.css.map",
+    "static/js/2.a336dab7.chunk.js.LICENSE.txt": "/nested-graph-generator/static/js/2.a336dab7.chunk.js.LICENSE.txt",
+    "static/media/github-logo.svg": "/nested-graph-generator/static/media/github-logo.d1859b20.svg",
     "static/media/logo.svg": "/nested-graph-generator/static/media/logo.e385133d.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.835347f2.js",
-    "static/js/2.21ccd1d6.chunk.js",
-    "static/css/main.41d4da2d.chunk.css",
-    "static/js/main.2124ec96.chunk.js"
+    "static/js/2.a336dab7.chunk.js",
+    "static/css/main.21979357.chunk.css",
+    "static/js/main.3ae1488e.chunk.js"
   ]
 }

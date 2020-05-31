@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/nested-graph-generator/precache-manifest.a0f94cad5a0db95adc646524c3d9e88a.js"
+  "/nested-graph-generator/precache-manifest.21734982ab320e615bffc79d227269ca.js"
 );
 
 self.addEventListener('message', (event) => {
