@@ -7,13 +7,16 @@ import { getRandomArbitraryInt } from './utils/general';
 import { generateNestedGraph } from 'nested-graph-generator';
 import { generateGraphLayout } from './utils/layout-utils';
 import { NestedGraph } from './utils/nested-graph';
+import ReactJson from 'react-json-view';
 
 function generateRandomGraph(config: GraphConfig) {
-  const { nodes, links } = generateNestedGraph(config);
-  const graph = new NestedGraph();
-  graph.setNodes(nodes.map((n, i) => ({ ...n, name: `Graph-Node ${i}` })));
-  graph.setLinks(links);
-  const layout = generateGraphLayout(graph);
+  const graph = generateNestedGraph(config);
+  const layout = generateGraphLayout(
+    new NestedGraph(
+      graph.nodes.map((n, i) => ({ ...n, name: `Graph-Node ${i}` })),
+      graph.links
+    )
+  );
   return {
     graph,
     layout
@@ -32,7 +35,7 @@ const initialGraphData = generateRandomGraph(initialConfig);
 const CompoundGraphPage: React.FC = () => {
   const [config, setConfig] = useState<GraphConfig>(initialConfig);
   const [{ graph, layout }, setGraphData] = useState<{
-    graph: NestedGraph;
+    graph: any;
     layout: GraphLayout;
   }>(initialGraphData);
 
@@ -57,6 +60,14 @@ const CompoundGraphPage: React.FC = () => {
             />
           </div>
         </div>
+      </div>
+      <div className="compound-graph-page__json">
+        <ReactJson
+          src={graph}
+          name={null}
+          displayDataTypes={false}
+          displayObjectSize={false}
+        />
       </div>
       <div className="compound-graph-page__draw-area">
         <DrawCompoundGraph layout={layout} />

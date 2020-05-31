@@ -46,8 +46,7 @@ const DrawCompoundGraph: React.SFC<{
       viewBox={`0 0 ${layout.size.width} ${layout.size.height}`}
       style={{
         width: '100%',
-        height: '100%',
-        border: '1px solid #ccc'
+        height: '100%'
       }}
     >
       {allNodes.map((n) => (
