@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.41d4da2d.chunk.css",
-    "main.js": "/static/js/main.2124ec96.chunk.js",
-    "main.js.map": "/static/js/main.2124ec96.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.1d3647f4.js",
-    "runtime-main.js.map": "/static/js/runtime-main.1d3647f4.js.map",
-    "static/js/2.21ccd1d6.chunk.js": "/static/js/2.21ccd1d6.chunk.js",
-    "static/js/2.21ccd1d6.chunk.js.map": "/static/js/2.21ccd1d6.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.b270f604bbfe1025073c767529dd070d.js": "/precache-manifest.b270f604bbfe1025073c767529dd070d.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.41d4da2d.chunk.css.map": "/static/css/main.41d4da2d.chunk.css.map",
-    "static/js/2.21ccd1d6.chunk.js.LICENSE.txt": "/static/js/2.21ccd1d6.chunk.js.LICENSE.txt",
-    "static/media/logo.svg": "/static/media/logo.e385133d.svg"
+    "main.css": "/nested-graph-generator/static/css/main.41d4da2d.chunk.css",
+    "main.js": "/nested-graph-generator/static/js/main.2124ec96.chunk.js",
+    "main.js.map": "/nested-graph-generator/static/js/main.2124ec96.chunk.js.map",
+    "runtime-main.js": "/nested-graph-generator/static/js/runtime-main.835347f2.js",
+    "runtime-main.js.map": "/nested-graph-generator/static/js/runtime-main.835347f2.js.map",
+    "static/js/2.21ccd1d6.chunk.js": "/nested-graph-generator/static/js/2.21ccd1d6.chunk.js",
+    "static/js/2.21ccd1d6.chunk.js.map": "/nested-graph-generator/static/js/2.21ccd1d6.chunk.js.map",
+    "index.html": "/nested-graph-generator/index.html",
+    "precache-manifest.a0f94cad5a0db95adc646524c3d9e88a.js": "/nested-graph-generator/precache-manifest.a0f94cad5a0db95adc646524c3d9e88a.js",
+    "service-worker.js": "/nested-graph-generator/service-worker.js",
+    "static/css/main.41d4da2d.chunk.css.map": "/nested-graph-generator/static/css/main.41d4da2d.chunk.css.map",
+    "static/js/2.21ccd1d6.chunk.js.LICENSE.txt": "/nested-graph-generator/static/js/2.21ccd1d6.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/nested-graph-generator/static/media/logo.e385133d.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.1d3647f4.js",
+    "static/js/runtime-main.835347f2.js",
     "static/js/2.21ccd1d6.chunk.js",
     "static/css/main.41d4da2d.chunk.css",
     "static/js/main.2124ec96.chunk.js"
