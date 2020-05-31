@@ -22,7 +22,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts test --watchAll=false --passWithNoTests",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -43,5 +43,6 @@
   "devDependencies": {
     "@types/d3-shape": "^1.3.2",
     "@types/dagre": "^0.7.44"
-  }
+  },
+  "homepage": "https://zombierobo.github.io/nested-graph-generator"
 }
