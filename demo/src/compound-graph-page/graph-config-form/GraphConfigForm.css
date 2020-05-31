@@ -1,0 +1,12 @@
+.graph-config-form > label {
+  display: flex;
+  flex-direction: column;
+}
+
+.graph-config-form > label:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.graph-config-form > label > input {
+  margin-top: 6px;
+}
