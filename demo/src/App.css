@@ -8,14 +8,30 @@
 .header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   width: 100%;
   border-bottom: 1px solid #ddd;
 }
 
-.header > .app-name {
+a.app-name {
   white-space: nowrap;
-  padding: 1rem;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+}
+
+a.app-name,
+a.app-name:hover,
+a.app-name:link,
+a.app-name:visited {
+  color: rgba(0, 0, 0, 0.85);
+  text-decoration: none;
+}
+
+a.app-name > img {
+  margin-right: 0.75rem;
+  width: 2rem;
+  height: 2rem;
 }
 
 .content {

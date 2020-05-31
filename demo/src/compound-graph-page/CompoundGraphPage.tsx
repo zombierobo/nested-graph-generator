@@ -39,9 +39,6 @@ const CompoundGraphPage: React.FC = () => {
     layout: GraphLayout;
   }>(initialGraphData);
 
-  console.table(graph);
-  console.table(layout);
-
   const onGenerateFromConfigSubmit = () =>
     setGraphData(generateRandomGraph(config));
 
